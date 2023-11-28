@@ -1,0 +1,32 @@
+_format_version: "1.1"
+services:
+- name: ai-agents-system-service
+  url: http://ai_agents_system:8000
+  routes:
+  - name: ai-agents-system-route
+    paths:
+    - /agents
+- name: ai-assistant-platform-service
+  url: http://ai_assistant_platform:3000
+  routes:
+  - name: ai-assistant-platform-route
+    paths:
+    - /assistant
+- name: elysiumos-web-service
+  url: http://elysiumos_web:4000
+  routes:
+  - name: elysiumos-web-route
+    paths:
+    - /elysium-web
+- name: elysiumos-desktop-service
+  url: http://elysiumos_desktop:5000
+  routes:
+  - name: elysiumos-desktop-route
+    paths:
+    - /elysium-desktop
+- name: virtual-butler-service
+  url: http://virtual_butler:6000
+  routes:
+  - name: virtual-butler-route
+    paths:
+    - /butler
